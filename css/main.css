@@ -96,7 +96,7 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: #252527;
   height: 100%;
   width: 100%;
 }
@@ -114,13 +114,17 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #c5b8fe;
   background-color: #222;
   height: 80px;
   width: 100%;
 }
+span{
+    font-size: 1.25em;
+}
 
-main {
-  background-color: #ccc;
+main {  
+  background-color: #252527;
   height: 250px;
   width: 100%;
 }
@@ -137,13 +141,39 @@ main {
 #div-1,
 #div-2,
 #div-3 {
+    background-color: #252527;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.25em;
+  font-size: 1.0em;
   height: auto;
+    width: 30%;
+}
+
+#div-2 {
+  border-right-color: #c5b8fe;
+  border-right-style: outset;
+  border-right-width: 1px; 
+  border-left-color: #c5b8fe;
+  border-left-style: inset;
+  border-left-width: 1px;  
+}
+
+footer{
+  background-color: #252527;  
+}
+
+a i.fab{
+    padding: 25%;
+    color: #c5b8fe;
+}
+
+p {
+    color: #ea00b9;
+    padding: 5%;
+    text-align: center;
 }
 
 .wrapper span {
@@ -261,11 +291,11 @@ main {
 @media (min-width: 1200px) {
   #div-1,
   #div-2{
-      /* set your flex value to 1 50% */
+      flex: 1 50%;
   }
 
   #div-3 {
-    /* set your flex value to 1 100% */
+    flex: 1 100%;
   }
 }
 
